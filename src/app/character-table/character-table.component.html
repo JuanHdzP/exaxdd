@@ -1,0 +1,20 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>Nombre del personaje</th>
+      <th>Status</th>
+      <th>Género</th>
+      <th>Imagen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let personaje of personajes">
+      <td>{{ personaje.name }}</td>
+      <td>{{ personaje.status }}</td>
+      <td>{{ personaje.gender }}</td>
+      <td>
+        <img [src]="personaje.image" alt="{{ personaje.name }}" width="150px" />
+      </td>
+    </tr>
+  </tbody>
+</table>
